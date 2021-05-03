@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Rubik:wght@500;600&display=swap");
+
+.header {
+  overflow: hidden;
+  background-color: #cc0000;
+  padding: 10px 10px;
+}
+
+.header a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  margin-right: 12px;
+  font-family: "Nunito", sans-serif;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+}
+
+.header a:hover {
+  background-color: #e60000;
+}
+
+.header-right {
+  float: right;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+}
+
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+/* Efeito ao clicar no botão ( Ir para Login ) */
+#paracadastro:target ~ .content #cadastro,
+#paralogin:target ~ .content #login {
+  z-index: 2;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+/* Efeito ao clicar no botão ( Cadastre-se ) */
+#registro:target ~ .content #login,
+#paralogin:target ~ .content #cadastro {
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+/* BUTÃO DO FOOTER */
+button {
+  width: 58px;
+  height: 58px;
+  border: none;
+  margin-left: 30px;
+
+  border-radius: 5px;
+  background: #cc0000;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background: #ec0000;
+}

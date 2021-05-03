@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Doe Vida</title>
+
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a class="links" id="paracadastro"></a>
+      <a class="links" id="paralogin"></a>
+
+      <div class="header">
+        <a href="#default" class="logo"> DOE VIDA </a>
+        <div class="header-right">
+          <a class="active" href="../index.html"> Home </a>
+          <a href="../pages/sobrenos.html"> Sobre nós </a>
+          <a href="../pages/informacoes.html"> Informações </a>
+          <a href="../pages/equipe.html"> Equipe </a>
+          <a href="../pages/relatos.html"> Relatos </a>
+        </div>
+      </div>
+
+      <div class="content">
+        <!--FORMULÁRIO DE LOGIN-->
+        <div id="login">
+          <form method="post" action="">
+            <h1>Login</h1>
+
+            <p>
+              <label for="email_login"> CPF </label>
+              <input
+                id="email_login"
+                name="email_login"
+                required="required"
+                type="password"
+                placeholder="ex. 111.222.333-44"
+              />
+            </p>
+
+            <p>
+              <label for="senha_login"> Senha </label>
+              <input
+                id="senha_login"
+                name="senha_login"
+                required="required"
+                type="password"
+                placeholder="********"
+              />
+            </p>
+
+            <p>
+              <input
+                type="checkbox"
+                name="manterlogado"
+                id="manterlogado"
+                value=""
+              />
+              <label for="manterlogado"> Manter-me logado </label>
+              <a class="esqueceu" href="#"> Esqueceu sua senha? </a>
+            </p>
+
+            <button class="submit">Logar</button>
+
+            <p class="link">
+              Ainda não possui uma conta?
+              <a href="#paracadastro"> Cadastre-se </a>
+            </p>
+          </form>
+        </div>
+
+        <!--FORMULÁRIO DE CADASTRO-->
+        <div id="cadastro">
+          <form method="post" action="">
+            <h1>Cadastro</h1>
+
+            <div class="textos">
+              <br />
+              <h3>Obrigada por se interessar no projeto!</h3>
+
+              <br />
+              <br />
+              <br />
+
+              <p>
+                Para torna-se um doador, clique no botão abaixo para mais
+                informações.
+              </p>
+            </div>
+
+            <br />
+            <br />
+
+            <a href="../pages/doar.html">
+              <button class="submit">Quero Doar</button>
+            </a>
+
+            <p class="link">
+              Possui conta?
+              <a href="#paralogin"> Ir para Login </a>
+            </p>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <button onclick="history.back()">
+          <img src="../images/arrow-back.svg" alt="Voltar" />
+        </button>
+      </footer>
+    </div>
+  </body>
+</html>
