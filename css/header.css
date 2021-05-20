@@ -97,11 +97,11 @@
 }
 
 /* BUTÃO DO FOOTER */
-button {
+.button {
   width: 58px;
   height: 58px;
   border: none;
-  margin-left: 30px;
+  margin-left: 50px;
 
   border-radius: 5px;
   background: #cc0000;
@@ -109,6 +109,6 @@ button {
   transition: background-color 0.2s;
 }
 
-button:hover {
+.button:hover {
   background: #ec0000;
 }
