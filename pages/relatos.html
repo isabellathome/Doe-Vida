@@ -1,66 +1,218 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Relatos | Doe Vida</title>
 
-    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/relatos.css">
-</head>
-<body>
-
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/relatos.css" />
+  </head>
+  <body>
     <div class="main">
-        <div class="container">
-            <div class="header">
-                <a href="#default" class="logo"> DOE VIDA </a>
-                <div class="header-right">
-                  <a class="active" href="../index.html"> Home </a>
-                  <a href="../pages/sobrenos.html"> Sobre nós </a>
-                  <a href="../pages/informacoes.html"> Informações </a>
-                  <a href="../pages/relatos.html"> Relatos </a>
-                </div>
-              </div>
-              
-              <div id="textos">
-                       <h1> Relatos </h1>
-                       <p> varios relatos </p>
-                  </div>
-
-              <div class="content">
-                  
-
-                  <div class="relatos">
-                    <article class="teacher-item">
-                        <header>
-                            <img 
-                              src="https://avatars2.githubusercontent.com/u/2254731?s=460&amp;u=0ba16a79456c2f250e7579cb388fa18c5c2d7d65&amp;v=4" 
-                              alt="Diego Fernandes">
-          
-                              <div>
-                                 <strong>Diego Fernandes</strong>
-                                 <span>Química</span>
-                               </div>
-          
-                        </header>
-                  
-                      <p>Entusiasta das melhores tecnologias de química avançada.<br>
-                      <br>Apaixonado por explodir coisas em laboratório e por mudar a vida das pessoas através de experiências.
-                      Mais de 200.000 pessoas já passaram por uma das minhas explosões.</p>
-                  
-                      <footer>
-                          
-                       </footer>
-          
-                  </article>
-                  </div>
-                   
-              </div>
-
+      <div class="container">
+        <div class="header">
+          <a href="#default" class="logo"> DOE VIDA </a>
+          <div class="header-right">
+            <a class="active" href="../index.html"> Home </a>
+            <a href="../pages/sobrenos.html"> Sobre nós </a>
+            <a href="../pages/informacoes.html"> Informações </a>
+            <a href="../pages/relatos.html"> Relatos </a>
+          </div>
         </div>
+
+        <div id="textos">
+          <h3>Relatos</h3>
+          <p> Abaixo encontra-se relatos sobre nossos colaboradores, sem eles não existiríamos. Com isso somos gratos a todos aqueles <br> que se tornam doadores, pacientes ou instuições contribuidores com nosso projeto. </p>          
+          <hr style="width: 500px; margin: auto" />
+        </div>
+
+        <div class="content">
+          <div class="relatos">
+            
+            <article class="item-relato">
+              <header>
+                <img
+                  src="../images/hailey-laura.jpg"
+                  alt="Laura Campo - Doadora"
+                />
+
+                <div>
+                  <strong>Laura Campos - Doador</strong>
+                  <span>São Paulo</span>
+                </div>
+              </header>
+
+              <p>
+                Fiquei muito feliz quando soube do projeto e de como era fácil se cadastrar, na minha cidade o hemocentro é bem longe então seria ruim fazer 2 viagens apenas para se cadastrar. Rápido, informativo e ótimo para várias pessoas, indico o projeto pra todo mundo!
+              </p>
+
+              <footer>
+                <img src="../images/facebook.png" alt="Facebook" />
+                <img src="../images/instagram.png" alt="Instagram.png" />
+                <img src="../images/twitter.png" alt="Twitter" />
+              </footer>
+            </article>
+
+            <article class="item-relato">
+              <header>
+                <img
+                  src="../images/hospital-brasilia.png"
+                  alt="Hospital Brasília"
+                />
+
+                <div>
+                  <strong>Hospital de Brasília - Instituição</strong>
+                  <span>Brasília</span>
+                </div>
+              </header>
+
+              <p>
+                É um prazer inestimável ter como parceiro a ONG Doe Vida, além de ser super necessário para o nosso país, facilita o atendimento entre paciente e doador, e possui uma rede imensa de instituições envolvidas.
+              </p>
+
+              <footer>
+                <a class="link-site" href="https://hospitalbrasilia.com.br/pt"> https://hospitalbrasilia.com.br/pt </a>
+              </footer>
+            </article>
+
+            <article class="item-relato">
+              <header>
+                <img
+                  src="../images/justin-diego.jpg"
+                  alt="Diego Oliveira"
+                />
+
+                <div>
+                  <strong>Diego Oliveira - Paciente</strong>
+                  <span>Roraima</span>
+                </div>
+              </header>
+
+              <p>
+                Não sei nem como agradecer ao meu doador e ao Doe Vida de como facilitaram o processo de encontrar alguém compatível e que pudesse ocorrer a transplantação. Que isso possa acontecer com muitos outros pacientes! Cadastre-se imediatamente, você pode salvar uma vida como salvaram a minha!
+              </p>
+
+              <footer>
+                <img src="../images/facebook.png" alt="Facebook" />
+                <img src="../images/instagram.png" alt="Instagram.png" />
+                <img src="../images/twitter.png" alt="Twitter" />
+              </footer>
+            </article>
+          </div>
+        </div>
+        <br />
+
+        <div class="area-usuario">
+          <form class="form" id="form" action="" method="post">
+            <fieldset>
+              <legend> Agora, você conta a sua história...</legend>
+              <div class="form-areas">
+                <label for="nome"> Nome Completo: </label>
+                <input
+                  type="text"
+                  id="nome"
+                  pattern="[A-Za-z].{2,}"
+                  title="Digite seu nome completo."
+                  required
+                 />
+              </div>
+
+              <div class="form-areas">
+                <label for="email"> Email: </label>
+                <input
+                  type="text"
+                  id="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  placeholder="seuemail@gmail.com"
+                  title="Digite seu email."
+                  required
+                />
+              </div>
+
+              <div class="form-areas">
+                <label for="estado"> Estado: </label>
+                <input
+                  type="text"
+                  id="estado"
+                  pattern="[A-Za-z].{2,}"
+                  placeholder="Digite seu estado de residência."
+                  title="Deve ser um dos 26 estados brasileiros e/ou o Distrito Federal."
+                  required
+                />
+              </div>
+
+              <div class="form-areas">
+                <label for="rede-social"> Facebook: (Opcional) </label>
+                <input
+                  type="text"
+                  id="rede-social"
+                  pattern="[A-Za-z].{2,}"
+                  placeholder="Link da sua rede social. Ex: https://"
+                />
+              </div>
+
+              <div class="form-areas">
+                <label for="rede-social"> Instagram: (Opcional) </label>
+                <input
+                  type="text"
+                  id="rede-social"
+                  pattern="[A-Za-z].{2,}"
+                  placeholder="Link da sua rede social. Ex: https://"
+                />
+              </div>
+
+              <div class="form-areas">
+                <label for="rede-social"> Twitter: (Opcional) </label>
+                <input
+                  type="text"
+                  id="rede-social"
+                  pattern="[A-Za-z].{2,}"
+                  placeholder="Link da sua rede social. Ex: https://"
+                />
+              </div>
+
+              <div class="form-areas">
+                <label for="rede-social"> Site: (Opcional) </label>
+                <input
+                  type="text"
+                  id="rede-social"
+                  pattern="[A-Za-z].{2,}"
+                  placeholder="Link do seu site. Ex: https://"
+                />
+              </div>
+
+              <label id="radio"> Você é: </label>
+                <input
+                  type="radio"
+                  id="radio2"
+                  name="radios_doacao"
+                  value="paciente"
+                  checked
+                />
+                <label for="radio1">Paciente</label>
+                <input type="radio" id="radio2" name="radios_doacao" value="doador" />
+                <label for="radio2">Doador</label>
+                <input type="radio" id="radio2" name="radios_doacao" value="hospital" />
+                <label for="radio3">Instituição</label>
+
+                <div class="form-areas">
+                  <label for="text-area"> Seu relato: </label> <br>
+
+                  <textarea name="relato" id="relato-usuario" cols="40" rows="20">  </textarea>
+                </div>
+
+                <button type="submit"> Enviar </button>
+               
+              <br /> <br>
+
+            </fieldset>
+            
+         
+        </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>

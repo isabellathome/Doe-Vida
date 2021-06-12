@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Rubik:wght@500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.img-logo {
+    width: 600px;
+    height: 300px;
+    padding: 30px;
+    margin-left: 350px;
+}
+
+.text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #413e3e;
+    margin-bottom: 15px;
+    margin: 20px;
+    text-align: center;
+}
+
+.p2 {
+    margin: 25px;
+    text-align: center;
+}

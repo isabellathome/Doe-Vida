@@ -9,9 +9,9 @@
 body,
 html {
   box-sizing: border-box;
-  margin: 0;
+  margin: 400;
   padding: 0;
-  background-color: #cc2323;
+  background-color: #cc0000;
 }
 
 .container .content-wrapper {
@@ -54,7 +54,6 @@ html {
   color: #fff;
   float: left;
   padding: 2px 16px;
-  text-align: center;
 }
 
 .main-content .topnav .logo-brand {
@@ -89,7 +88,7 @@ html {
 }
 
 .main-content .topnav .first {
-  margin-right: 24%;
+  margin-right: 35%;
 }
 
 .main-content .info {

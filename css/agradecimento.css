@@ -83,9 +83,13 @@ html {
 .main-content .info .principal {
   height: 30vh;
   margin-top: -10px;
-  margin-left: 70px;
+  
   z-index: 2;
   color: #fff;
+}
+
+.main-content .info .principal .titulo {
+  margin-left: 70px;
 }
 
 .main-content .info .principal .red-color {
@@ -104,11 +108,13 @@ html {
   font-weight: 600;
   color: #413e3e;
   margin-bottom: 15px;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .main-content .info .principal .buttons-wrapper {
   margin-top: 30px;
-  margin-left: 370px;
+  margin-left: 440px;
   z-index: 1;
 }
 
@@ -127,4 +133,10 @@ html {
   z-index: 1;
   font-weight: 600;
   transition: all 0.3s ease;
+}
+
+.img-amigos {
+  width: 200px;
+  height: 200px;
+  margin-left: 400px;
 }

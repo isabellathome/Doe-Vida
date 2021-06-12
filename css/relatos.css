@@ -7,7 +7,21 @@
 }
 
 #textos {
-    font-size: 25px;
+    text-align: center;
+}
+
+#textos h3 {
+    font-size: 55px;
+    color: #cc0000;
+    margin-top: 22px;
+}
+
+#textos p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #413e3e;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 
 .content {
@@ -16,94 +30,146 @@
     margin: 0 auto;
 }
 
-.teacher-item {
+.item-relato {
     background-color: #FFFFFF;
     border: 1px solid #E6E6F0;
-    border-radius: 0.8rem;
-    margin-top: 2.4rem;
+    border-radius: 8px;
+    margin-top: 15px;
 }
 
-.teacher-item header {
-    padding: 3.2rem 2rem;
+.item-relato header {
+    padding: 24px 12px;
     display: flex;
     align-items: center;
 }
 
-.teacher-item header img {
-    width: 8rem;
-    height: 8rem;
+.item-relato header img {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 
-.teacher-item header div {
+.item-relato header div {
     margin-left: 2.4rem;
 }
 
-.teacher-item header div strong {
-    font: 700 2.4rem Nunito;
+.item-relato header div strong {
+    font: 700 25px Nunito;
     display: block;
-    color: #32264d;
+    color: #cc0000;
 }
 
-.teacher-item header div span {
-    font-size: 1.6rem;
+.item-relato header div span {
+    font-size: 20px;
     display: block;
     margin-top: .4rem;
 }
 
-.teacher-item > p { /* Setinha para se referir ao primeiro p */
-    padding: 0.2rem;
-    font-size: 1.6rem;
-    
-    line-height: 2.8rem;
+.item-relato p {
+    text-align: justify;
+    margin-bottom: 10px;
 }
 
-.teacher-item footer {
-    padding: 3.2rem 2rem;
+.item-relato > p { /* Setinha para se referir ao primeiro p */
+    padding: 12px;
+    font-size: 18px;
+}
+
+.item-relato footer {
+    padding: 28px 16px;
     background-color: #fafafc;
     border-top: 1px solid #E6E6F0;
-    margin-top: 3.2rem;
-
+    
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
-.teacher-item footer p {
-    font-size: 1.4rem;
-    line-height: 2.4rem;
-    color: #9C98A6;
+footer img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-left: 150px;
 }
 
-.teacher-item footer p strong {
-    font-size: 1.6rem;
-    color: #825735;
-    display: block;
-}
-
-
-.teacher-item footer button {
-    width: 20rem;
-    height: 5.6rem;
-    background: #04D361;
-    color: #FFFFFF;
-    border: 0;
-    border-radius: .8rem;
-    cursor: pointer; /* É um cursor de maõzinha quando ficar em cima*/
-    font: 700 1.4rem Archivo;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly; /* Evenly= constante (Um espaçamento constante) */
-
+footer .link-site {
+    text-align: center;
     text-decoration: none;
-
-    transition: background 0.2s;
-    margin-left: 1.6rem;
+    margin-left: 230px;
 }
 
-.teacher-item footer button:hover { /* Hover é para fazer a transition ali em cima (escurecer a cor) */
-     background: #04BF58;
+.form {
+    padding: 30px 10px;
 }
 
+legend {
+    font: bold 20px Nunito;
+}
+
+.form-areas {
+    padding-bottom: 15px;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.form-areas label, #radio, #doencas {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-family: 'Nunito', sans-serif ;
+    font-weight: 600;
+}
+
+.form-areas input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 800px;
+}
+
+.form-areas input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-areas.sucess input {
+    border-color: #2ecc71;
+}
+
+.form-areas.error input {
+    border-color: #e74c3c;
+}
+
+#radio {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+#radio1, #radio2 {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+textarea {
+    width: 1250px;
+    height: 200px;
+}
+
+button {
+    width: 155px;
+    height: 60px;
+    margin-left: 600px;
+    background: #cc0000;
+    color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-family: 'Nunito', sans-serif ;
+}
+
+button:hover {
+  background: #ec0000;
+}
 

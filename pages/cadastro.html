@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doação | Doe Vida</title>
+
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/cadastro.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <a href="#default" class="logo"> DOE VIDA </a>
+        <div class="header-right">
+          <a class="active" href="../index.html"> Home </a>
+          <a href="../pages/sobrenos.html"> Sobre nós </a>
+          <a href="../pages/informacoes.html"> Informações </a>
+          <a href="../pages/relatos.html"> Relatos </a>
+        </div>
+      </div>
+
+      <h3>Cadastro de Doador</h3>
+      <hr style="width: 800px; margin: auto" />
+
+      <div class="container">
+        <form class="form" id="form" action="" method="post">
+          <div class="form-areas">
+            <label for="nome"> Nome Completo: </label>
+            <input
+              type="text"
+              name="nome"
+              pattern="[A-Za-z].{2,}"
+              title="Digite seu nome completo."
+              required
+            />
+          </div>
+
+          <div class="form-areas">
+            <label for="cpf"> CPF: </label>
+            <input
+              type="text"
+              name="cpf"
+              placeholder="111.222.333.45"
+              required
+            />
+          </div>
+
+          <div class="form-areas">
+            <label for="rg"> RG: </label>
+            <input
+              type="text"
+              name="rg"
+              placeholder="0.111.222"
+              title="Seu RG deve ter 7 dígitos."
+              required
+            />
+          </div>
+
+          <div class="form-areas">
+            <label for="email"> Email: </label>
+            <input
+              type="text"
+              name="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              placeholder="seuemail@gmail.com"
+              title="Digite seu email."
+              required
+            />
+          </div>
+
+          <div class="form-areas">
+            <label for="senha"> Senha: </label>
+            <input
+              type="password"
+              name="senha"
+              pattern="(?=.*\d)(?=.*[a-za])(?=.*[A-Z]).{8,}"
+              title="Sua senha deve ter 8 digítos, um número, uma letra maiúscula e um símbolo."
+              required
+            />
+          </div>
+
+          <div class="form-areas">
+            <label for="data_nascimento"> Data de nascimento: </label>
+            <input
+              type="date"
+              name="data_nascimento"
+              pattern="[0-9.]"
+              placeholder="DD/MM/YYYY"
+              required
+            />
+          </div>
+
+          <div class="form-areas">
+            <label for="telefone"> Telefone: </label>
+            <input
+              type="text"
+              name="telefone"
+              placeholder="(xx) xxxxx-xxxx"
+              required
+            />
+          </div>
+
+          <div class="form-areas">
+            <label for="cidade"> Cidade: </label>
+            <input
+              type="text"
+              name="cidade"
+              placeholder="Digite seu cidade de residência."
+              required
+            />
+          </div>
+
+          <br />
+
+          <div class="escolhas">
+            <div class="form-areas">
+              <select class="form-select" aria-label="label_estados" name="uf">
+                <option selected>UF</option>
+                <option value="RO">RO</option>
+                <option value="AC">AC</option>
+                <option value="AM">AM</option>
+                <option value="RR">RR</option>
+                <option value="PA">PA</option>
+                <option value="AP">AP</option>
+                <option value="TO">TO</option>
+                <option value="MA">MA</option>
+                <option value="PI">PI</option>
+                <option value="CE">CE</option>
+                <option value="RN">RN</option>
+                <option value="PB">PB</option>
+                <option value="PE">PE</option>
+                <option value="AL">AL</option>
+                <option value="SE">SE</option>
+                <option value="BA">BA</option>
+                <option value="MG">MG</option>
+                <option value="ES">ES</option>
+                <option value="RJ">RJ</option>
+                <option value="SP">SP</option>
+                <option value="PR">PR</option>
+                <option value="SC">SC</option>
+                <option value="RS">RS</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="GO">GO</option>
+                <option value="DF">DF</option>
+              </select>
+            </div>
+
+            <div class="form-areas">
+              <select class="form-select" aria-label="label_sexo" name="sexo">
+                <option selected>Sexo</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Masculino">Masculino</option>
+              </select>
+            </div>
+
+            <div class="form-areas">
+              <select class="form-select" aria-label="label_tipo" name="doacao">
+                <option selected>Tipo de Doação</option>
+                <option value="sangue">Sangue</option>
+                <option value="medula">Medula Óssea</option>
+                <option value="orgaos">Órgãos</option>
+              </select>
+            </div>
+          </div>
+
+          <hr style="width: 827px; margin: 30px 0 40px 0" ; />
+
+          <label id="doencas">
+            Possui algum tipo de doença doença neoplásica (câncer), hematológica
+            (do sangue) ou do sistema imunológico?
+          </label>
+          <br />
+          <input
+            type="radio"
+            id="radio1"
+            name="radios_doencas"
+            value="nao"
+            checked
+          />
+          <label for="radio1">Não</label>
+          <input type="radio" id="radio1" name="radios_doencas" value="sim" />
+          <label for="radio2">Sim</label>
+
+          <div class="form-areas">
+            <label for="doacoes_feitas"> Se sim, qual? </label>
+            <input
+              type="text"
+              name="doencas"
+              pattern="[A-Za-z].{2,}"
+            />
+          </div>
+
+          <label id="radio"> Já fez algum tipo de doação? </label> <br />
+          <input
+            type="radio"
+            id="radio2"
+            name="radios_doacao"
+            value="sim"
+            checked
+          />
+          <label for="radio1">Não</label>
+          <input type="radio" id="radio2" name="radios_doacao" value="sim" />
+          <label for="radio2">Sim</label>
+
+          <br />
+
+          <div class="form-areas">
+            <label for="doacoes_feitas"> Se sim, qual? </label>
+            <input
+              type="text"
+              name="doacoes_feitas"
+              pattern="[A-Za-z].{2,}"
+            />
+          </div>
+          <br />
+      <br />   
+          <!-- <input class="continuar" type="submit" value="Continuar"> -->
+        </form>
+        <a href="agradecimento.html"> <button class="continuar" type="submit">Continuar</button></a> <br> <br> <br>
+      </div>     
+      <br>
+    </div>
+  </body>
+</html>

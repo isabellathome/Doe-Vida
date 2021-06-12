@@ -5,93 +5,105 @@
     padding: 0;
 }
 
-h3 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 55px;
-    color: #cc0000;
-    text-align: center;
-    margin-top: 18px;
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    background-color: #ebf5f6;
 }
 
 .container {
-    border-radius: 5px;
-    overflow: hidden;
-    width: 900px;
-    margin-left: 165px;
-    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    margin-left: 90px;
 }
 
-.form {
-    padding: 30px 10px;
-}
-
-.form-areas {
-    padding-bottom: 15px;
+.container .card {
     position: relative;
-}
-
-.form-areas label, #radio, #doencas {
-    display: inline-block;
-    margin-bottom: 5px;
-    font-family: 'Nunito', sans-serif ;
-    font-weight: 600;
-}
-
-.form-areas input {
-    border: 2px solid #f0f0f0;
-    border-radius: 4px;
-    display: block;
-    font-family: inherit;
-    font-size: 14px;
-    padding: 10px;
-    width: 800px;
-}
-
-.form-areas input:focus {
-    outline: 0;
-    border-color: #777;
-}
-
-.form-areas.sucess input {
-    border-color: #2ecc71;
-}
-
-.form-areas.error input {
-    border-color: #e74c3c;
-}
-
-select {
-    width: 200px;
-    height: 40px;
-    margin-right: 112px;
-}
-
-.escolhas {
-    display: inline-flex; 
-}
-
-#radio {
-    margin-left: 300px;
-    margin-top: 10px;
-}
-
-#radio1, #radio2 {
-    margin-left: 240px;
-    margin-top: 15px;
-}
-
-.continuar {
-    width: 155px;
-    height: 60px;
-    margin-left: 1100px;
-    background: #cc0000;
-    color: #f0f0f0;
-    border: none;
+    min-width: 320px;
+    height: 400px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+                inset -5px -5px 5px rgba(255,255,255, 0.5),
+                5px 5px 5px rgba(0,0,0,0.05),
+                -5px -5px 5px rgba(255,255,255, 0.5);
+    border-radius: 15px;
+    margin: 30px;
     cursor: pointer;
-    transition: background-color 0.2s;
-    font-family: 'Nunito', sans-serif ;
 }
 
-.continuar:hover {
-  background: #ec0000;
+.container .card .box {
+    position: absolute;
+    margin: 20px;
+    background: #ebf5fc;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.container .card:hover .box {
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.container .card .box .content {
+    padding: 15px;
+    text-align: center;
+}
+
+.container .card .box .content h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.02);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.container .card:hover .box .content h2 {
+    color: rgba(0, 0, 0, 0.08);
+}
+
+.container .card .box .content h3 {
+    font-size: 1.8em;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.container .card .box .content p {
+    font-size: 1em;
+    font-weight: 300;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 5px;
+}
+
+.container .card .box .content a {
+    position: relative;
+    display: inline-block;
+    padding: 4px 20px;
+    background: #1ee8fe;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.02);
+}
+
+.container .card .box .content a {
+    background: #cc0000;
+}
+
+footer {
+    margin-top: -35px;
 }
