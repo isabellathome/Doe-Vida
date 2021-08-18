@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Logo - Doe Vida" src="./images/logo.png" width="400px" />
+    <img alt="Logo - Doe Vida" src="./images/logo.png" width="300px" />
 </h1>
 
 <h3 align="center">
@@ -10,12 +10,20 @@
 
 <p align="center">
 
-  <a href="">
-    <img alt="Made by Isabella Thomé" src="https://img.shields.io/badge/made%20by-Isabella-%cc0000">
+  <a href="MADE">
+    <img alt="Made by Isabella Thomé" src="https://img.shields.io/static/v1?label=Made by&message=Isabella&color=cc0000&style=for-the-badge&logo=ghost"/>
   </a>
 
   <a href="LICENSE" >
-    <img alt="License" src="https://img.shields.io/badge/license-MIT-%cc0000">
+    <img alt="License" src="https://img.shields.io/static/v1?label=License&message=MIT&color=cc0000&style=for-the-badge"/>
   </a>
 
 </p>
+
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
+
+---
+
+[⬆ Voltar ao topo](#nome-do-projeto)
